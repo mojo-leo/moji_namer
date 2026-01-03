@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=61", "wheel"]
+requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -7,17 +7,18 @@ name = "moji_namer"
 version = "0.0.2"
 
 description = "A small python utility to make ChatGPT API calls to rename picture files."
-readme = "README.md"
+readme = { file = "README.md", content-type = "text/markdown" }
+license = { file = "LICENSE.txt" }
 requires-python = ">=3.8"
-license = { file = "LICENSE" }
 
 authors = [
   { name = "Lucas Sinclair" },
   { name = "Paul Rougieux" }
 ]
 
-urls = { Homepage = "https://github.com/xapple/moji_namer/" }
-
 dependencies = [
   "openai>=1.50.0",
 ]
+
+[project.urls]
+Homepage = "https://github.com/xapple/moji_namer/"
