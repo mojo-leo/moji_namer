@@ -13,3 +13,6 @@
 /.vscode
 /.cursorignore
 /.cursorrules
+
+# LLM files
+/.claude
